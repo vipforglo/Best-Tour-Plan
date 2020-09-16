@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AEAA,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAU;CAEkB;;AAH1C,AAEE,CAFD,CAEC,IAAI,CAAC;EACH,WAAW,EAAE,oBAAoB;CAAG",
+    "mappings": "AEAA,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAU;CAAG;;AAC3B,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,oBAAoB;CAAG;;AACtC,AAAA,UAAU,CAAC;EACT,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,aAAa;CAAG",
     "sources": [
         "../sass/style.sass",
         "../sass/_variables.sass",
