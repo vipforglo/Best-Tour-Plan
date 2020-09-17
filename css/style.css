@@ -398,15 +398,19 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   padding: 31px 0;
   list-style-type: none;
+  color: #fff;
 }
 
 .navbar-menu__link {
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
+  color: inherit;
   font-size: 14px;
   line-height: 18px;
 }
@@ -530,6 +534,7 @@ template {
             flex-direction: column;
     width: 16px;
     height: 11px;
+    padding: 0;
     border: none;
     background-color: #fff;
     cursor: pointer;
@@ -538,6 +543,12 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 99px;
   }
 }
 /*# sourceMappingURL=style.css.map */
