@@ -548,6 +548,35 @@ template {
     height: 1px;
     background-color: #333333;
   }
+  .stars {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+  .hotel-name {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .hotel-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hotel-info__name {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .hotel-info__text {
+    width: 100%;
+  }
+  .hotel-info__rating {
+    display: none;
+  }
+  .hotel-info__offer {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 576px) {
@@ -581,5 +610,83 @@ template {
 .breadcrumb-list__link {
   text-decoration: none;
   color: inherit;
+}
+
+.hotel {
+  padding-top: 23px;
+  padding-bottom: 70px;
+}
+
+.hotel-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hotel-info__name {
+  margin: 0;
+  margin-right: 14px;
+}
+
+.hotel-name {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.hotel-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hotel-description {
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0;
+}
+
+.stars {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.offer {
+  font-size: 10px;
+  line-height: 13px;
+  background-color: #EC1F46;
+  color: #fff;
+  padding: 4px 9px;
+  border-radius: 3px;
+}
+
+.rating {
+  max-width: 65px;
+  min-height: 45px;
+  text-align: center;
+  background-color: #EC1F46;
+  color: #fff;
+  padding: 8px 6px;
+  border-radius: 4px;
+}
+
+.rating__text {
+  font-size: 8px;
+  line-height: 10px;
+}
+
+.rating__counter {
+  font-size: 14px;
+  line-height: 18px;
 }
 /*# sourceMappingURL=style.css.map */
