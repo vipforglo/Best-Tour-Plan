@@ -510,7 +510,7 @@ template {
 
 .hotel {
   background-color: #F5FAFE;
-  padding-top: 23px;
+  padding-top: 5px;
   padding-bottom: 70px;
 }
 
@@ -705,6 +705,9 @@ template {
   }
   .logo {
     width: 99px;
+  }
+  .stars {
+    margin-right: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
