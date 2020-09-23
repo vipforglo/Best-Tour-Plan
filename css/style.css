@@ -620,7 +620,7 @@ template {
 }
 
 .slider {
-  width: 728px;
+  max-width: 728px;
 }
 
 .slider-button {
@@ -647,6 +647,10 @@ template {
 .slider-button--prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
+}
+
+.slider-picture {
+  width: 100%;
 }
 
 @media (max-width: 1200px) {
