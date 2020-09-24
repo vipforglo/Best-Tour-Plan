@@ -623,13 +623,15 @@ template {
   line-height: 18px;
 }
 
-.slider-picture {
+.swiper-slide__picture {
+  width: 100%;
   border-radius: 8px;
+  height: 100%;
 }
 
 .swiper-container {
   width: 100%;
-  height: 450px;
+  height: 100%;
   position: relative;
   border-radius: 8px;
 }
@@ -650,7 +652,8 @@ template {
 }
 
 .slider {
-  max-width: 728px;
+  width: 728px;
+  height: 450px;
 }
 
 .slider-button {
@@ -677,10 +680,6 @@ template {
 .slider-button--prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
-}
-
-.slider-picture {
-  width: 100%;
 }
 
 .booking {
@@ -794,7 +793,6 @@ template {
   width: 100%;
   min-height: 45px;
   margin-top: 17px;
-  padding: 13px 83px;
   background-color: #EC1F46;
   border: none;
   border-radius: 4px;
@@ -817,6 +815,14 @@ template {
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+  .slider {
+    width: 590px;
+  }
+  .swiper-slide__image {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -843,6 +849,31 @@ template {
     line-height: 15px;
   }
   .search__input {
+    width: 340px;
+  }
+  .hotel-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hotel__slider {
+    margin-bottom: 30px;
+  }
+  .hotel-right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .booking {
+    width: 340px;
+    height: 210px;
+  }
+  .slider {
+    width: 100%;
+  }
+  .map {
     width: 340px;
   }
 }
@@ -913,6 +944,22 @@ template {
             order: -1;
     margin-left: 0;
   }
+  .slider {
+    height: 350px;
+  }
+  .hotel-right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 450px;
+  }
+  .booking {
+    width: 100%;
+  }
+  .map {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -925,6 +972,12 @@ template {
   }
   .stars {
     margin-right: 18px;
+  }
+  .slider {
+    height: 250px;
+  }
+  .hotel__slider {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
