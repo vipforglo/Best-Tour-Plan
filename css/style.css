@@ -826,6 +826,7 @@ template {
   background-image: url(../img/newsletter-bgjpg.jpg);
   min-height: 260px;
   background: transparent;
+  z-index: 99;
 }
 
 .newsletter:before {
