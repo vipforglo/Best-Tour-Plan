@@ -823,7 +823,7 @@ template {
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
-  background-image: url(../img/newsletter-bgjpg.jpg);
+  background-image: url(./img/newsletter-bgjpg.jpg);
   min-height: 260px;
   background: transparent;
   z-index: 99;
@@ -862,6 +862,7 @@ template {
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
+  margin: 0;
 }
 
 .newsletter-title__strong {
