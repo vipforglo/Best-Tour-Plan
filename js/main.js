@@ -32,5 +32,5 @@ var reviewsSlider = new Swiper(".reviews-slider", {
 })
 
 $(".newsletter").parallax({
-    imageSrc: "../img/newsletter-bgjpg.jpg"
+    imageSrc: "./img/newsletter-bgjpg.jpg"
 })
