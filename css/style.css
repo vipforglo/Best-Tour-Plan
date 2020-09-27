@@ -965,7 +965,7 @@ template {
 
 .reviews-slider__button {
   position: absolute;
-  top: 50%;
+  top: 40%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 30px;
