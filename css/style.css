@@ -1143,6 +1143,20 @@ template {
   cursor: pointer;
 }
 
+.footer {
+  background-color: #0A223D;
+  color: #fff;
+  padding-top: 108px;
+  padding-bottom: 95px;
+}
+
+.footer__ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
