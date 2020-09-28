@@ -1219,6 +1219,9 @@ template {
   .map {
     width: 340px;
   }
+  .reviews {
+    padding: 40px 0 60px 0;
+  }
   .reviews-slider__item {
     max-width: 580px;
   }
@@ -1238,6 +1241,9 @@ template {
   .swiper-container {
     margin-right: 0;
   }
+  .activities {
+    padding: 60px 0 70px 0;
+  }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1247,7 +1253,7 @@ template {
   }
   .card {
     width: 340px;
-    height: 230px;
+    height: 250px;
   }
 }
 
@@ -1466,6 +1472,9 @@ template {
   }
   .card {
     width: 100%;
+  }
+  .activities__title {
+    margin-bottom: 36px;
   }
 }
 /*# sourceMappingURL=style.css.map */
