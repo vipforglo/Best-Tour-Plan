@@ -1549,9 +1549,10 @@ template {
     grid-row: 3;
   }
   .footer__contact-form {
-    grid-column: span 4;
+    grid-column: span 5;
     -ms-grid-row: 4;
     grid-row: 4;
+    max-width: 539px;
   }
   .footer__paycards {
     margin-left: auto;
