@@ -1283,6 +1283,10 @@ template {
 .footer__text {
   color: #BDBDBD;
   margin-bottom: 22px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
 }
 
 .footer__input {
@@ -1294,6 +1298,10 @@ template {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__legal {
@@ -1312,6 +1320,10 @@ template {
   margin-bottom: 22px;
   width: 539px;
   height: 123px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__button {
@@ -1492,11 +1504,16 @@ template {
   .footer-wrapper {
     -ms-grid-columns: 1fr 1fr 140px 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 140px 1fr 1fr 1fr;
-    grid-row-gap: 40px;
+    grid-row-gap: 55px;
   }
   .footer__input {
-    -ms-flex-preferred-size: 49%;
-        flex-basis: 49%;
+    -ms-flex-preferred-size: 47%;
+        flex-basis: 47%;
+    width: 254px;
+  }
+  .footer__message {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -1512,9 +1529,7 @@ template {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    margin-left: 70px;
   }
   .footer__categories {
     -ms-grid-row: 2;
@@ -1534,7 +1549,7 @@ template {
     grid-row: 3;
   }
   .footer__contact-form {
-    grid-column: span 5;
+    grid-column: span 4;
     -ms-grid-row: 4;
     grid-row: 4;
   }
@@ -1801,6 +1816,7 @@ template {
   .footer-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    grid-row-gap: 33px;
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -1813,6 +1829,9 @@ template {
     grid-row: 2;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin-left: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .footer__legal {
     -ms-grid-row: 3;
@@ -1846,18 +1865,29 @@ template {
     grid-column: 1;
   }
   .footer__message {
-    width: auto;
+    width: 281px;
     margin-bottom: 0;
+  }
+  .footer__input {
+    width: 281px;
   }
   .footer__under {
     display: inherit;
     margin-top: 30px;
   }
+  .footer__title {
+    margin: 0 0 10px 0;
+  }
+  .footer__title--inline {
+    margin-bottom: 20px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
   .footer__paycards {
     margin-top: 10px;
   }
   .footer__title--mb-3 {
-    margin-bottom: 15px;
+    margin-bottom: 35px;
   }
   .footer__form {
     display: -ms-grid;
