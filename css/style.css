@@ -1618,11 +1618,15 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .navbar-menu__alldeals {
+    margin-top: 10px;
+  }
   .navbar-menu__item {
-    margin-bottom: 31px;
+    margin-bottom: 17px;
   }
   .navbar-menu__item--mobile--visible {
     display: block;
+    margin-bottom: 27px;
   }
   .search__input {
     width: 243px;
