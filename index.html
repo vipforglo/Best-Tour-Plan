@@ -46,8 +46,8 @@
         <div class="navbar-bottom">
             <div class="container">
                 <ul class="navbar-menu">
-                    <li class="navbar-menu__item navbar-menu__item--mobile--visible"> <a href="#"
-                            class="user navbar__user navbar__user--mobile--visible">
+                    <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+                        <a href="#" class="user navbar__user navbar__user--mobile--visible">
                             <img src="./img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
                             <span class="user__name user__name--light">Nathan</span>
                         </a>
@@ -131,7 +131,7 @@
                     </p>
                 </div>
                 <!-- /.hotel-info__text -->
-                <div class="rating hotel-info__rating">
+                <div data-toggle="modal" data-href="#rating-modal" class="rating hotel-info__rating">
                     <span class="rating__text">User Rattings</span>
                     <span class="rating__counter">4.5/5</span>
                 </div>
@@ -196,7 +196,7 @@
                             </a>
                         </div>
                         <!-- /.booking__call-center -->
-                        <button class="button booking__button">
+                        <button data-toggle="modal" data-href="#booking-modal" class="button booking__button">
                             View Other Options
                         </button>
                         <!-- /.button booking__button -->
@@ -565,7 +565,7 @@ quest" class="card__image" />
                     <form action="#" class="footer__form">
                         <input type="text" class="input footer__input" placeholder="Your Full Name*" />
                         <input type="text" class="input footer__input" placeholder="Phone Number*" />
-                        <textarea class="footer__message" cols="30" rows="10" placeholder="Message"></textarea>
+                        <textarea class="message footer__message" cols="30" rows="10" placeholder="Message"></textarea>
                         <button class="button footer__button" type="submit">
                             Send
                         </button>
@@ -592,7 +592,55 @@ quest" class="card__image" />
         </div>
         <!-- /.container -->
     </footer>
-
+    <div class="modal" id="booking-modal">
+        <div class="modal__overlay"></div>
+        <!-- /.modal__overlay -->
+        <div class="modal__dialog">
+            <a href="#" class="modal__close">
+                <img src="img/close.svg" alt="icon: close" />
+            </a>
+            <h3 class="modal__title modal__title--mb-3 modal__mb3">
+                SEND US A FEEDBACK
+            </h3>
+            <form action="#" class="modal__form">
+                <input type="text" class="input modal__input" placeholder="Your Full Name*" />
+                <input type="text" class="input modal__input" placeholder="Phone Number*" />
+                <input type="text" class="input modal__input" placeholder="Email*" />
+                <textarea class="message modal__message" cols="30" rows="10" placeholder="Message"></textarea>
+                <button class="button modal__button" type="submit">
+                    Send
+                </button>
+                <span class="modal__info">* Required Fields</span>
+            </form>
+        </div>
+        <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="modal" id="rating-modal">
+        <div class="modal__overlay"></div>
+        <!-- /.modal__overlay -->
+        <div class="modal__dialog">
+            <a href="#" class="modal__close">
+                <img src="img/close.svg" alt="icon: close" />
+            </a>
+            <h3 class="modal__title modal__title--mb-3 modal__mb3">
+                Booking
+            </h3>
+            <form action="#" class="modal__form">
+                <input type="text" class="input modal__input" placeholder="Your Full Name*" />
+                <input type="text" class="input modal__input" placeholder="Phone Number*" />
+                <input type="text" class="input modal__input" placeholder="Email*" />
+                <textarea class="message modal__message" cols="30" rows="10" placeholder="Message"></textarea>
+                <button class="button modal__button" type="submit">
+                    Send
+                </button>
+                <span class="modal__info">* Required Fields</span>
+            </form>
+        </div>
+        <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
