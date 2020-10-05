@@ -7,7 +7,7 @@
     right: 0
     background-color: rgba(0, 143, 223, 0.39)
     z-index: 100
-    visibility: hidden 
+    visibility: hidden
     opacity: 0
     visibility: opacity 0.2s
     &--visible
@@ -24,7 +24,7 @@
     color: $light
     border-radius: 8px
     z-index: 101
-    visibility: hidden 
+    visibility: hidden
     opacity: 0
     visibility: opacity 0.2s
     &--visible
@@ -36,7 +36,7 @@
     top: 17px
     text-decoration: none
     cursor: pointer
-  &__input 
+  &__input
     width: 100%
     margin-bottom: 15px
   &__message
@@ -49,7 +49,11 @@
     font-size: 12px
     line-height: 15px
     color: $gray
-    margin-left: 41px
+  &__button
+    &_wrapper
+      display: flex
+      justify-content: space-between
+      align-items: center
   &__title
     font-style: normal
     font-weight: bold
@@ -60,3 +64,4 @@
     text-align: center
   &__title
     margin-top: 0
+  &__from

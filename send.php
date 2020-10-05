@@ -3,25 +3,22 @@
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
-
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
-
 // Формирование самого письма
-$title = "New message from Best Tour Plan";
+$title = "Новое обращение Best Tour Plan";
 $body = "
-<h2>New message</h2>
-<b>Name:</b> $name<br>
-<b>Phone:</b> $phone<br><br>
-<b>Message:</b><br>$message
+<h2>Новое обращение</h2>
+<b>Имя:</b> $name<br>
+<b>Телефлн:</b> $phone<br><br>
+<b>Сообщение:</b><br>$message
 ";
-
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
-    $mail->isSMTP();   
+    $mail->isSMTP();
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
     // $mail->SMTPDebug = 2;
@@ -29,28 +26,26 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'utestutest007@gmail.com'; // Логин на почте
-    $mail->Password   = '83673572760ara'; // Пароль на почте
+    $mail->Username   = 'ddd15355@gmail.com'; // Логин на почте
+    $mail->Password   = '315120ara'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('utestutest007@gmail.com', 'Ara Ara'); // Адрес самой почты и имя отправителя
-
+    $mail->setFrom('ddd15355@gmail.com', 'sss ddd'); // Адрес самой почты и имя отправителя
     // Получатель письма
     $mail->addAddress('artur_dyu@mail.ru');
-
 // Отправка сообщения
 $mail->isHTML(true);
 $mail->Subject = $title;
-$mail->Body = $body;    
-
+$mail->Body = $body;
 // Проверяем отравленность сообщения
-if ($mail->send()) {$result = "success";} 
+if ($mail->send()) {$result = "success";}
 else {$result = "error";}
 
 } catch (Exception $e) {
     $result = "error";
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
-
 // Отображение результата
-header('Location: thankyou.html');
+// echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+
+header('Location:thankyou.html');

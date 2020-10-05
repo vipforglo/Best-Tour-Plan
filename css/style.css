@@ -1454,7 +1454,18 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #BDBDBD;
-  margin-left: 41px;
+}
+
+.modal__button_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .modal__title {
@@ -1661,6 +1672,16 @@ template {
   }
   .footer__item--mb-2 {
     margin-top: 20px;
+  }
+  .modal__button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .modal__button_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
