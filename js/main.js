@@ -81,4 +81,5 @@ $(document).ready(function () {
     $(document).ready(function () {
         $(".phoneadd").mask("+7(999) 999-9999? x99999");
     });
+    AOS.init();
 });
