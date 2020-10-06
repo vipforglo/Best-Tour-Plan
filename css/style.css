@@ -1901,7 +1901,7 @@ template {
 @media (max-width: 768px) and (orientation: landscape) {
   .modal__dialog--visible {
     overflow: auto;
-    height: 72%;
+    height: 90%;
   }
 }
 
