@@ -284,6 +284,12 @@
   .footer
     &__input
       flex-basis: 100%
+@media (max-width: 768px) and (orientation: landscape)
+  .modal
+    &__dialog
+      &--visible
+        overflow: auto
+        height: 72%
 @media (max-width: 576px)
   .container
     max-width: 576px

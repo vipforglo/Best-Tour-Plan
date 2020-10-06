@@ -47,7 +47,6 @@ img {
 .button {
   min-width: 160px;
   min-height: 50px;
-  padding: 18px;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -566,7 +565,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 20px;
-  margin-top: 7px;
+  margin-top: 11px;
 }
 
 .hotel-info__offer {
@@ -705,18 +704,16 @@ template {
   text-align: center;
   background-color: #EC1F46;
   color: #fff;
-  padding: 8px 6px;
+  padding: 4px 6px;
   border-radius: 4px;
 }
 
 .rating__text {
   font-size: 8px;
-  line-height: 10px;
 }
 
 .rating__counter {
   font-size: 14px;
-  line-height: 18px;
 }
 
 .swiper-slide__picture {
@@ -804,7 +801,6 @@ template {
 
 .booking__heading {
   font-style: normal;
-  font-weight: 600;
   font-size: 18px;
   line-height: 25px;
 }
@@ -819,7 +815,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 9px;
+  margin-top: 4px;
 }
 
 .booking__num {
@@ -837,16 +833,13 @@ template {
 .booking__button {
   width: 100%;
   min-height: 45px;
-  margin-top: 17px;
+  margin-top: 19px;
   background-color: #EC1F46;
   border: none;
   border-radius: 4px;
   color: #fff;
-  font-family: Nunito;
   font-style: normal;
-  font-weight: 600;
   font-size: 14px;
-  line-height: 19px;
   cursor: pointer;
 }
 
@@ -1198,9 +1191,9 @@ template {
   -ms-grid-columns: (minmax(min-content, 1fr))[4];
       grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
       grid-template-columns: repeat(4, minmax(min-content, 1fr));
-  grid-gap: 20px;
-  grid-auto-rows: minmax(40px, -webkit-min-content);
-  grid-auto-rows: minmax(40px, min-content);
+  grid-gap: 25px;
+  grid-auto-rows: minmax(34px, -webkit-min-content);
+  grid-auto-rows: minmax(34px, min-content);
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -1427,6 +1420,8 @@ template {
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
+  overflow: auto;
+  height: 515px;
 }
 
 .modal__close {
@@ -1900,6 +1895,13 @@ template {
   .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .modal__dialog--visible {
+    overflow: auto;
+    height: 72%;
   }
 }
 
