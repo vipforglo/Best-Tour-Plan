@@ -79,7 +79,18 @@ $(document).ready(function () {
         });
     });
     $(document).ready(function () {
-        $(".phoneadd").mask("+7(999) 999-9999? x99999");
+        $(".phoneadd").mask("+7(999) 999-9999");
     });
     AOS.init();
+    $('.form__nored').each(function () {
+        $(this).validate({
+            errorClass: "invalid__nored",
+            messages: {
+                email: {
+                    required: "We need your email address to contact you",
+                    email: "Email address must be with @domain",
+                },
+            },
+        });
+    });
 });
