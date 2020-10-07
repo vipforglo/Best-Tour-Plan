@@ -1027,7 +1027,7 @@ template {
 
 .reviews-slider__button {
   position: absolute;
-  top: 40%;
+  top: 43%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 30px;
@@ -1043,12 +1043,12 @@ template {
 
 .reviews-slider__button--prev {
   background-image: url(../img/arrow-prev-secondary.svg);
-  left: 17px;
+  left: 0px;
 }
 
 .reviews-slider__button--next {
   background-image: url(../img/arrow-next-secondary.svg);
-  right: 17px;
+  right: 0px;
 }
 
 .reviews-slider__profile {
@@ -1289,6 +1289,10 @@ template {
   color: #BDBDBD;
 }
 
+.footer__item--mb-2 {
+  margin-bottom: 20px;
+}
+
 .footer__icon-wrapper {
   min-width: 40px;
 }
@@ -1311,12 +1315,17 @@ template {
   margin-bottom: 30px;
 }
 
+.footer__title--mb-3-left {
+  margin-bottom: 24px;
+}
+
 .footer__title--inline {
   margin: 0 43px 0 0;
 }
 
 .footer__contact-details {
   grid-column: span 2;
+  padding-top: 11px;
 }
 
 .footer__contact-form {
@@ -1902,13 +1911,13 @@ template {
   }
   .reviews-slider__button--prev {
     left: 50%;
-    margin-left: -105px;
+    margin-left: -90px;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
   }
   .reviews-slider__button--next {
     right: 50%;
-    margin-right: -105px;
+    margin-right: -90px;
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
   }
@@ -1938,6 +1947,9 @@ template {
 }
 
 @media (max-width: 576px) {
+  .reviews {
+    padding: 40px 0 0 0;
+  }
   .container {
     max-width: 576px;
     width: 92%;
