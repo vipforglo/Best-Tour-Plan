@@ -26,7 +26,7 @@
   .newsletter-wrapper
     max-width: 700px
   .logo
-    width: 132px
+    width: 101px
   .navbar
     &-top
       padding-top: 30px
@@ -36,6 +36,8 @@
     &-menu
       padding-top: 22px
       padding-bottom: 22px
+      padding-right: 14px
+      padding-left: 14px
       &__link
         font-style: normal
         font-weight: bold
@@ -45,8 +47,9 @@
   .search
     &__input
       width: 340px
+
   .hotel
-    padding-bottom: 60px
+    padding-bottom: 54px
     &-grid
       flex-direction: column
     &__slider
@@ -63,6 +66,12 @@
   .reviews
     padding: 40px 0 60px 0
     &-slider
+      &__button
+        top: 45%
+        &--prev
+          left: 2px
+        &--next
+          right: 2px
       &__item
         max-width: 580px
     &__title
@@ -79,7 +88,7 @@
   .swiper-container
     margin-right: 0
   .activities
-    padding: 0px 0 70px 0
+    padding: 23px 0 60px 0
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -88,13 +97,17 @@
     width: 340px
     height: 250px
     &__title
-      width: 200px
+      width: 205px
   .footer
-    padding-top: 73px
+    padding-top: 44px
     padding-bottom: 33px
+    &__title
+      &--inline
+        margin: 35px 41px 0 0
     &-wrapper
-      grid-template-columns: 1fr 1fr 140px 1fr 1fr 1fr
-      grid-row-gap: 55px
+      grid-template-columns: 1fr 50px 140px 1fr 1fr 1fr
+      grid-row-gap: 43px
+      // grid-gap: 16px
     &__input
       &-group
         flex-basis: 47%
@@ -105,22 +118,26 @@
       grid-row: 1 / 2
       grid-column: span 1
     &__social
+      &-links
+        margin-top: 35px
       &-network
         grid-row: 1 / 2
         grid-column: span 4
         align-self: center
-        margin-left: 70px
+        margin-left: 63px
     &__categories
       grid-row: 2 / 3
       grid-column: span 2
     &__legal
       grid-column: span 2
+      padding-right: 7px
     &__additional
       grid-column: span 2
     &__contact
       &-details
         grid-column: span 5
         grid-row: 3
+        padding-top: 16px
       &-form
         grid-column: span 5
         grid-row: 4
@@ -322,6 +339,8 @@
     height: 179px
   .hotel
     padding-bottom: 40px
+    &-info
+      padding-bottom: 40px
     &__slider
       margin-bottom: 20px
     &-right
@@ -443,3 +462,6 @@
     &__dialog
       padding: 33px 48px
       height: 90%
+  .breadcrumb-list
+    padding-top: 18px
+    padding-bottom: 0px
