@@ -16,6 +16,8 @@ $(document).ready(function () {
         effect: "flip",
     })
 
+    // Карты
+
     var reviewsSlider = new Swiper(".reviews-slider", {
         // Optional parameters
         loop: true,
