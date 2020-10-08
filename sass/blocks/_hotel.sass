@@ -73,9 +73,11 @@
       &--next
         right: 18px
         background-image: url(../img/arrow-next.svg)
+        outline: none
       &--prev
         left: 18px
         background-image: url(../img/arrow-prev.svg)
+        outline: none
 .stars
   flex-basis: 100%
 .offer
@@ -97,12 +99,13 @@
     font-size: 8px
   &__counter
     font-size: 14px
+    &_small
+      font-size: 10px
 .swiper-slide
   &__picture
     width: 100%
     border-radius: 8px
     height: 100%
-    object-fit: cover
 .booking
   background-color: $dark
   color: $light
