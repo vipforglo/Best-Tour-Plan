@@ -17,6 +17,14 @@ $(document).ready(function () {
     })
 
     // Карты
+    $(".hotel-right").on("mousemove", function () {
+        $(".map__frame").attr(
+            "src",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.041493411216!2d-79.08429287745705!3d43.08262299715547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d3430c6c1d7ebb%3A0x2c7d185cef4bebbf!2sHilton%20Niagara%20Falls%2FFallsview%20Hotel%20%26%20Suites!5e0!3m2!1sen!2sru!4v1600949142899!5m2!1sen!2sru"
+        );
+        $(".hotel-right").off("mousemove");
+        $(".map__image").css("display", "none");
+    });
 
     var reviewsSlider = new Swiper(".reviews-slider", {
         // Optional parameters
