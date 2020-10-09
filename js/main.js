@@ -92,9 +92,9 @@ $(document).ready(function () {
         $(".phoneadd").mask("+7(999) 999-9999");
     });
     AOS.init();
-    $('.form__nored').each(function () {
+    $('.form-nored').each(function () {
         $(this).validate({
-            errorClass: "invalid__nored",
+            errorClass: "invalid-nored",
             messages: {
                 email: {
                     required: "We need your email address to contact you",
