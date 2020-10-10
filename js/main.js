@@ -115,13 +115,13 @@ $(document).ready(function () {
 
       $(".hotel").on("mousemove",
     function () {
-      reviewSlider.keyboard.disable();
+      reviewsSlider.keyboard.disable();
       hotelSlider.keyboard.enable();
     });
-  $(".reviews").on("mousemove",
+      $(".reviews").on("mousemove",
     function () {
       hotelSlider.keyboard.disable();
-      reviewSlider.keyboard.enable();
+      reviewsSlider.keyboard.enable();
     });
 
     var reviewsSlider = new Swiper(".reviews-slider", {
