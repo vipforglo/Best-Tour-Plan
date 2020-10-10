@@ -45,7 +45,7 @@ $(document).ready(function () {
     $(".newsletter").parallax({
         imageSrc: "./img/newsletter-bgjpg.jpg"
     });
-
+   
     var menuButton = $(".menu-button");
     menuButton.on("click", function () {
         $(".navbar-bottom").toggleClass("navbar-bottom--visible");
@@ -84,12 +84,13 @@ $(document).ready(function () {
                 },
                 phone: {
                     required: "Phone is required",
+                    minlength: "Please enter at least 10 characters"
                 },
             },
         });
     });
     $(document).ready(function () {
-        $(".phoneadd").mask("+7(999) 999-9999");
+        $(".phoneadd").mask("+7(999)999-9999");
     });
     AOS.init();
     $('.form-nored').each(function () {
