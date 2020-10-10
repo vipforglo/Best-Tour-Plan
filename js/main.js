@@ -30,15 +30,15 @@ $(document).ready(function () {
         // Optional parameters
         loop: true,
 
-        keyboard: {
-            enabled: true,
-            onlyInViewport: false,
-        },
+        // keyboard: {
+        //     enabled: true,
+        //     onlyInViewport: false,
+        // },
 
         // Navigation arrows
         navigation: {
-            nextEl: ".reviews-slider__button--next",
-            prevEl: ".reviews-slider__button--prev",
+            nextEl: ".reviews-slider__button--next-second",
+            prevEl: ".reviews-slider__button--prev-first",
         },
     })
 
